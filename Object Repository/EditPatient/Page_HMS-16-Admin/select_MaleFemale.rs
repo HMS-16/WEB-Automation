@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_MaleFemale</name>
+   <tag></tag>
+   <elementGuidId>99f7fc50-db5b-465c-a430-b70999af5502</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>select.label-form-add-patient.form-select</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/main/div/div[3]/form/div[3]/div/select</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>b424967e-d359-4580-94c1-52440b4c7bd0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>label-form-add-patient form-select</value>
+      <webElementGuid>237fa706-44fd-4e42-8c6b-281c095bd4aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>MaleFemale</value>
+      <webElementGuid>b4195850-740a-4e9c-a7c5-845e8ae31220</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;fluid&quot;]/main[1]/div[@class=&quot;form-patient-page&quot;]/div[@class=&quot;container&quot;]/form[1]/div[@class=&quot;row row-cols-md-2 row-cols-1&quot;]/div[@class=&quot;col&quot;]/select[@class=&quot;label-form-add-patient form-select&quot;]</value>
+      <webElementGuid>f7c73492-9127-4ffa-ab4d-8379e4ec9761</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/main/div/div[3]/form/div[3]/div/select</value>
+      <webElementGuid>7141bd73-c558-4dbf-82c3-3e4f6cf0257f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[5]/following::select[1]</value>
+      <webElementGuid>ab87602a-90f2-41c3-aed8-d65b276c6e75</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[6]/preceding::select[1]</value>
+      <webElementGuid>6593ba14-4dd0-46f6-af62-86c2905d2fe2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//select</value>
+      <webElementGuid>1489e1e8-374a-478e-9c18-c6ab200136a3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[(text() = 'MaleFemale' or . = 'MaleFemale')]</value>
+      <webElementGuid>e626ca3c-82c1-4114-b946-3a710722fe2a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

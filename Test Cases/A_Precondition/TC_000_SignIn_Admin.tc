@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_000_SignIn_Admin</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c0414a9a-ee71-4175-84b0-9487d4b15f18</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7e695990-a167-460c-84ed-ac05a3665235</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e64155e0-25db-4ce9-82ee-2ac16f17bdd9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6feb805f-9404-47a0-95fa-6808ac83f048</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'http://riorasyid-react-hms.surge.sh/'</defaultValue>
+      <description></description>
+      <id>7e695990-a167-460c-84ed-ac05a3665235</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variable>
+   <variable>
+      <defaultValue>'karn.yong@mecallapi.com'</defaultValue>
+      <description></description>
+      <id>e64155e0-25db-4ce9-82ee-2ac16f17bdd9</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'WHARzY25fxDP8bkG/w0m0Q=='</defaultValue>
+      <description></description>
+      <id>6feb805f-9404-47a0-95fa-6808ac83f048</id>
+      <masked>false</masked>
+      <name>encrypt_password</name>
+   </variable>
+</TestCaseEntity>
