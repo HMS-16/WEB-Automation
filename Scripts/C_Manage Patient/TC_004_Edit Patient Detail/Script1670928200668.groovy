@@ -21,59 +21,96 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://test-nr6s25u59-yustikaprwt.vercel.app/dashboard')
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/a_Patient'))
 
 WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/EditIcon'))
 
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__fullName'), 'aaa')
+//WebUI.delay(5)
+//WebUI.sendKeys(findTestObject('EditPatient/Page_HMS-16-Admin/input__fullName'), Keys.chord(Keys.CONTROL, 'a'))
 
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__birthPlace'), 'aaa')
+//Press Ctrl+A on the Edit element
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/select_MaleFemale'), '2', true)
+//WebUI.sendKeys(findTestObject('Add SP with valid data/Page_/AddSp_CP_input Email'), Keys.chord(Keys.BACK_SPACE))
+//
+//WebUI.setText(findTestObject('Add SP with valid data/Page_/AddSp_CP_input Email'), CPemail)
+WebUI.sendKeys(findTestObject('EditPatient/Page_HMS-16-Admin/input__fullName'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__fullName'), fullnamePatient)
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/select_ABOAB'), '2', true)
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__birthPlace'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__birthPlace'), birthplacePatient)
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__email'), 'ababb@gmail.com')
+WebUI.selectOptionByValue(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/select_MaleFemale'), genderPatient, 
+    true)
+
+
+WebUI.selectOptionByValue(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/select_ABOAB'), bloodTypePatient, 
+    true)
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__email'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__email'), emailPatient)
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
 WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__numberMed'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/select_SingleMaried'), '2', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/select_SingleMaried'), statusPatient, 
+    true)
 
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__phoneNum'), '08283827312321')
-
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__address'), 'address')
-
-WebUI.doubleClick(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__province'))
-
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__address'), 'addressp')
-
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__province'), 'provinceP')
-
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__city'), 'cityP')
-
-WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/div_District'))
-
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__district'), 'dictrictP')
-
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__fullNameFam'), 'fullnameF')
-
-WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/div_Relationship With Patient'))
-
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__relationship'), 'relationF')
-
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__numberPhone'), 'phoneNuF')
-
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__emailFam'), 'emailF')
-
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__addressFamily'), 'AddressF')
-
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__provinceFamily'), 'ProvinceF')
-
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__cityFamily'), 'CityF')
-
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__districtFamily'), 'DistrictF')
-
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__phoneNum'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__phoneNum'), phoneNumberPatient)
 WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
-WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Yes'))
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__address'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__address'), addressPatient)
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__province'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__province'), provincePatient)
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__city'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__city'), cityPatient)
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__district'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__district'), districtPatient)
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__fullNameFam'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__fullNameFam'), fullnameFamily)
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__relationship'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__relationship'), relationshipFamily)
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__numberPhone'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__numberPhone'), phoneNumberFamily)
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__emailFam'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__emailFam'), emailFamily)
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__addressFamily'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__addressFamily'), addressFamily)
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__provinceFamily'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__provinceFamily'), provinceFamily)
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__cityFamily'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__cityFamily'), cityFamily)
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__districtFamily'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__districtFamily'), districtFamily)
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+
+
+//WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Yes'))
 

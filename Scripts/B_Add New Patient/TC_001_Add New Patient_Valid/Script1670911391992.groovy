@@ -21,6 +21,8 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://test-nr6s25u59-yustikaprwt.vercel.app/dashboard')
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Object Repository/Add New Patient/Page_HMS-16-Admin/Page_HMS-16-Admin/a_Patient'))
 
 WebUI.click(findTestObject('Object Repository/Add New Patient/Page_HMS-16-Admin/Page_HMS-16-Admin/button_Add Patient'))
@@ -39,8 +41,6 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Add New Patient/Page
 WebUI.selectOptionByValue(findTestObject('Object Repository/Add New Patient/Page_HMS-16-Admin/Page_HMS-16-Admin/select_SingleMaried'), 
     statusPatient, true)
 
-WebUI.click(findTestObject('Add New Patient/Page_HMS-16-Admin/birthday'))
-
 WebUI.setText(findTestObject('Add New Patient/Page_HMS-16-Admin/birthday'), birthdayPatient)
 
 WebUI.setText(findTestObject('Object Repository/Add New Patient/Page_HMS-16-Admin/Page_HMS-16-Admin/input__email'), emailPatient)
@@ -55,7 +55,7 @@ WebUI.setText(findTestObject('Object Repository/Add New Patient/Page_HMS-16-Admi
 WebUI.setText(findTestObject('Object Repository/Add New Patient/Page_HMS-16-Admin/Page_HMS-16-Admin/input__city'), cityPatient)
 
 WebUI.setText(findTestObject('Object Repository/Add New Patient/Page_HMS-16-Admin/Page_HMS-16-Admin/input__fullNameFam'), 
-    'Rewina')
+    fullnameFamily)
 
 WebUI.setText(findTestObject('Object Repository/Add New Patient/Page_HMS-16-Admin/Page_HMS-16-Admin/input__numberPhone'), 
     phoneNumberFamily)
@@ -66,7 +66,7 @@ WebUI.setText(findTestObject('Object Repository/Add New Patient/Page_HMS-16-Admi
 WebUI.setText(findTestObject('Object Repository/Add New Patient/Page_HMS-16-Admin/Page_HMS-16-Admin/input__cityFamily'), 
     cityFamily)
 
-WebUI.setText(findTestObject('Object Repository/Add New Patient/Page_HMS-16-Admin/Page_HMS-16-Admin/input__province'), provinceFamily)
+WebUI.setText(findTestObject('Object Repository/Add New Patient/Page_HMS-16-Admin/Page_HMS-16-Admin/input__province'), provincePatient)
 
 WebUI.setText(findTestObject('Object Repository/Add New Patient/Page_HMS-16-Admin/Page_HMS-16-Admin/input__district'), districtFamily)
 

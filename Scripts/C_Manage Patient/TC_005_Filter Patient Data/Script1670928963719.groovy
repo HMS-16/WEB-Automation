@@ -21,9 +21,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://test-nr6s25u59-yustikaprwt.vercel.app/patient')
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/a_Patient'))
 
-WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/ArrowIcon'))
+WebUI.click(findTestObject('Filter List Patient ASC dan DESC/Page_HMS-16-Admin/Titik3'))
 
 WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/div_21012022'))
 
