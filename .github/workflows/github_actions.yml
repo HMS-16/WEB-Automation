@@ -15,4 +15,4 @@ jobs:
       with:
           version: '8.5.2'
           projectPath: '${{ github.workspace }}'
-          args: '-noSplash -retry=0 -browserType=Chrome -statusDelay=15" -apiKey= ${{ secrets.KATALON_API_KEY }} --config'
+          
