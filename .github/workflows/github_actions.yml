@@ -1,23 +1,18 @@
-name: Start Github Action
-
+name: CI
 on:
-  pull_request:
   push:
-    branches: 
-      - main
-
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 jobs:
-  test:
-    name: Menambahkan Github action
-    runs-on: ubuntu-latest
-
+  build:
+    runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Katalon Studio Github Action
+      uses: katalon-studio/katalon-studio-github-action@v2.1
       with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install
-      run: npm install
-    - name: Test
-      run: npm test
+          version: '8.5.2'
+          projectPath: '${{ github.workspace }}'
+          args: '-noSplash -retry=0 -browserType=Chrome -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest" -apiKey= ${{ secrets.KATALON_API_KEY }} --config -webui.autoUpdateDrivers=true'
