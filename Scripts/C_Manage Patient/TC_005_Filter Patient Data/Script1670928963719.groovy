@@ -23,29 +23,19 @@ WebUI.navigateToUrl('https://test-nr6s25u59-yustikaprwt.vercel.app/patient')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/a_Patient'))
+WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/Page_HMS-16-Admin/a_Patient'))
 
-WebUI.click(findTestObject('Filter List Patient ASC dan DESC/Page_HMS-16-Admin/Titik3'))
+WebUI.navigateToUrl('https://test-nr6s25u59-yustikaprwt.vercel.app/patient')
 
-WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/div_21012022'))
+WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/Page_HMS-16-Admin/div_Date'))
 
-WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/div_21012022'))
+WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/Page_HMS-16-Admin/div_Date'))
 
-WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/ArrowIcon'))
+WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/Page_HMS-16-Admin/div_No.Medical Record'))
 
-WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/div_ABC1234567'))
+WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/Page_HMS-16-Admin/div_No.Medical Record'))
 
-WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/div_ABC1234567'))
+WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/Page_HMS-16-Admin/div_Age'))
 
-WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/ArrowIcon'))
-
-WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/div_15'))
-
-WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/div_18'))
-
-WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/svg_No.Medical Record_MuiSvgIcon-root MuiSv_7ede7f_1'))
-
-WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/div_22'))
-
-WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/div_22'))
+WebUI.click(findTestObject('Object Repository/Filter List Patient ASC dan DESC/Page_HMS-16-Admin/Page_HMS-16-Admin/div_Age'))
 
