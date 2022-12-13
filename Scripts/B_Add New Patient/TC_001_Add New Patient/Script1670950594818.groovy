@@ -85,3 +85,104 @@ WebUI.click(findTestObject('Object Repository/Add New Patient/Page_HMS-16-Admin/
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/Add New Patient/Page_HMS-16-Admin/Page_HMS-16-Admin/h5_Patient Detail'))
 
+valueFullNamePatient = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__fullName'))
+valueFullBirthPlacePatient = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__birthPlace'))
+valueEmailPatient = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__email'))
+valuePhoneNumPatient = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__phoneNum'))
+valueAddressPatient = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__address'))
+valueProvincePatient = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__province'))
+valueCityPatient = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__city'))
+valueDistrictPatient = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__district'))
+valueFullNameFam = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__fullNameFam'))
+valueRelationshipFam = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__relationship'))
+valuePhoneNumFam = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__numberPhone'))
+valueEmailFam = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__emailFam'))
+valueAddressFam = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__addressFamily'))
+valueProvinceFam = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__provinceFamily'))
+valueCityFam = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__cityFamily'))
+valueDistrictFam = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__districtFamily'))
+
+if (valueFullNamePatient == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if (valueFullBirthPlacePatient == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if (valueEmailPatient == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if(valueEmailPatient.contains("@gmail.com") == false){
+//verify bahwa pesan error muncul, dan verify text pesan errornya bahwa format email tidak  benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if (valuePhoneNumPatient == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if((valuePhoneNumPatient.length() < 9) || (valuePhoneNumPatient.length() > 16)){
+//verify bahwa pesan error muncul, dan verify text pesan errornya bahwa panjang no telp hanya 9-16 tidak  benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if (valueAddressPatient == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if (valueProvincePatient == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if (valueCityPatient == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if (valueDistrictPatient == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if (valueFullNameFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if (valueRelationshipFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if (valuePhoneNumFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if((valuePhoneNumFam.length() < 9) || (valuePhoneNumFam.length() > 16)){
+//verify bahwa pesan error muncul, dan verify text pesan errornya bahwa panjang no telp hanya 9-16 tidak  benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if (valueEmailFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if(valueEmailFam.contains("@gmail.com")==false){
+//verify bahwa pesan error muncul, dan verify text pesan errornya bahwa format email tidak  benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if (valueAddressFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if (valueAddressFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if (valueProvinceFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if (valueCityFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if (valueDistrictFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
