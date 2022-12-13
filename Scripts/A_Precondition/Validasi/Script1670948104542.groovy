@@ -17,3 +17,26 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+valuePostcode = WebUI.getText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+
+valueAddress = WebUI.getText(findTestObject('Add SP with valid data/Page_/input_Address'))
+
+if (valuePostcode == '') {
+    WebUI.setText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'), PostCode)
+}
+//else {
+//    WebUI.sendKeys(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'), Keys.chord(Keys.CONTROL, 'a'))
+//
+//    WebUI.sendKeys(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'), Keys.chord(Keys.BACK_SPACE))
+//}
+
+if (valueAddress == '') {
+    WebUI.setText(findTestObject('Add SP with valid data/Page_/input_Address'), Address)
+} 
+//else {
+//    WebUI.sendKeys(findTestObject('Add SP with valid data/Page_/input_Address'), Keys.chord(Keys.CONTROL, 'a'))
+//
+//    WebUI.sendKeys(findTestObject('Add SP with valid data/Page_/input_Address'), Keys.chord(Keys.BACK_SPACE))
+//}
+
+WebUI.delay(5)

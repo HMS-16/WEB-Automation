@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC_002_Add New Patient Invalid</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>5da083cb-dd14-460b-9abf-a1ea895d9b3f</testCaseGuid>
-</TestCaseEntity>

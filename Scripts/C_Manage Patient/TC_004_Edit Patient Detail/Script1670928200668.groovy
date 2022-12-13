@@ -29,88 +29,229 @@ WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/Edit
 
 //WebUI.delay(5)
 //WebUI.sendKeys(findTestObject('EditPatient/Page_HMS-16-Admin/input__fullName'), Keys.chord(Keys.CONTROL, 'a'))
-
 //Press Ctrl+A on the Edit element
-
 //WebUI.sendKeys(findTestObject('Add SP with valid data/Page_/AddSp_CP_input Email'), Keys.chord(Keys.BACK_SPACE))
 //
 //WebUI.setText(findTestObject('Add SP with valid data/Page_/AddSp_CP_input Email'), CPemail)
 WebUI.sendKeys(findTestObject('EditPatient/Page_HMS-16-Admin/input__fullName'), Keys.chord(Keys.CONTROL, 'a'))
+
 WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__fullName'), fullnamePatient)
+
 WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
-WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__birthPlace'), Keys.chord(Keys.CONTROL, 'a'))
+valueFullNamePatient = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__fullName'))
+
+if (valueFullNamePatient == '') {
+	//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+	//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__birthPlace'), Keys.chord(Keys.CONTROL, 
+        'a'))
+
 WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__birthPlace'), birthplacePatient)
+
 WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+
+valueFullBirthPlacePatient = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__birthPlace'))
+
+if (valueFullBirthPlacePatient == '') {
+	//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+	//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/select_MaleFemale'), genderPatient, 
     true)
 
-
 WebUI.selectOptionByValue(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/select_ABOAB'), bloodTypePatient, 
     true)
 
-WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__email'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__email'), Keys.chord(Keys.CONTROL, 
+        'a'))
+
 WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__email'), emailPatient)
+
 WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+valueEmailPatient = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__email'))
+if (valueEmailPatient == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if(valueEmailPatient.contains("@gmail.com") == false){
+//verify bahwa pesan error muncul, dan verify text pesan errornya bahwa format email tidak  benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
 
 WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__numberMed'))
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/select_SingleMaried'), statusPatient, 
     true)
 
-WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__phoneNum'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__phoneNum'), Keys.chord(Keys.CONTROL, 
+        'a'))
+
 WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__phoneNum'), phoneNumberPatient)
-WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
-WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__address'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+valuePhoneNumPatient = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__phoneNum'))
+if (valuePhoneNumPatient == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if((valuePhoneNumPatient.length() < 9) || (valuePhoneNumPatient.length() > 16)){
+//verify bahwa pesan error muncul, dan verify text pesan errornya bahwa panjang no telp hanya 9-16 tidak  benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__address'), Keys.chord(Keys.CONTROL, 
+        'a'))
+
 WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__address'), addressPatient)
-WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
-WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__province'), Keys.chord(Keys.CONTROL, 'a'))
-WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__province'), provincePatient)
 WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+valueAddressPatient = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__address'))
+if (valueAddressPatient == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__province'), Keys.chord(Keys.CONTROL, 
+        'a'))
+
+WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__province'), provincePatient)
+
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+valueProvincePatient = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__province'))
+if (valueProvincePatient == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
 
 WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__city'), Keys.chord(Keys.CONTROL, 'a'))
+
 WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__city'), cityPatient)
-WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
-WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__district'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+valueCityPatient = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__city'))
+if (valueCityPatient == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__district'), Keys.chord(Keys.CONTROL, 
+        'a'))
+
 WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__district'), districtPatient)
-WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
-WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__fullNameFam'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+valueDistrictPatient = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__district'))
+if (valueDistrictPatient == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__fullNameFam'), Keys.chord(Keys.CONTROL, 
+        'a'))
+
 WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__fullNameFam'), fullnameFamily)
-WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
-WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__relationship'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+valueFullNameFam = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__fullNameFam'))
+if (valueFullNameFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__relationship'), Keys.chord(Keys.CONTROL, 
+        'a'))
+
 WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__relationship'), relationshipFamily)
-WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
-WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__numberPhone'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+valueRelationshipFam = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__relationship'))
+if (valueRelationshipFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__numberPhone'), Keys.chord(Keys.CONTROL, 
+        'a'))
+
 WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__numberPhone'), phoneNumberFamily)
-WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
-WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__emailFam'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+valuePhoneNumFam = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__numberPhone'))
+if (valuePhoneNumFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if((valuePhoneNumFam.length() < 9) || (valuePhoneNumFam.length() > 16)){
+//verify bahwa pesan error muncul, dan verify text pesan errornya bahwa panjang no telp hanya 9-16 tidak  benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__emailFam'), Keys.chord(Keys.CONTROL, 
+        'a'))
+
 WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__emailFam'), emailFamily)
-WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
-WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__addressFamily'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+valueEmailFam = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__emailFam'))
+if (valueEmailFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+else if(valueEmailFam.contains("@gmail.com")==false){
+//verify bahwa pesan error muncul, dan verify text pesan errornya bahwa format email tidak  benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__addressFamily'), Keys.chord(Keys.CONTROL, 
+        'a'))
+
 WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__addressFamily'), addressFamily)
+
 WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
-WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__provinceFamily'), Keys.chord(Keys.CONTROL, 'a'))
+valueAddressFam = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__addressFamily'))
+if (valueAddressFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__provinceFamily'), Keys.chord(Keys.CONTROL, 
+        'a'))
+
 WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__provinceFamily'), provinceFamily)
-WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
-WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__cityFamily'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+valueProvinceFam = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__provinceFamily'))
+if (valueProvinceFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__cityFamily'), Keys.chord(Keys.CONTROL, 
+        'a'))
+
 WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__cityFamily'), cityFamily)
-WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
-WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__districtFamily'), Keys.chord(Keys.CONTROL, 'a'))
+WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
+valueCityFam = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__cityFamily'))
+if (valueCityFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}
+
+WebUI.sendKeys(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__districtFamily'), Keys.chord(Keys.CONTROL, 
+        'a'))
+
 WebUI.setText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__districtFamily'), districtFamily)
+
 WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Save'))
 
-
-//WebUI.click(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/button_Yes'))
-
+valueDistrictFam = WebUI.getText(findTestObject('Object Repository/EditPatient/Page_HMS-16-Admin/input__districtFamily'))
+if (valueDistrictFam == '') {
+//verify bahwa pesan error muncul, dan verify text pesan errornya sudah benar
+//    WebUI.verifyElementText(findTestObject('Add SP with valid data/Page_/AddSP_inputPostalcode'))
+}

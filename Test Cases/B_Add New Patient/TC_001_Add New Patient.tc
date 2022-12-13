@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_001_Add New Patient_Valid</name>
+   <name>TC_001_Add New Patient</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>bb35a484-5092-4551-9a21-363e6e3dc67d</testCaseGuid>
