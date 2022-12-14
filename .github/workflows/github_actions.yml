@@ -16,4 +16,4 @@ jobs:
       with:
           version: '8.5.2'
           projectPath: '${{ github.workspace }}'
-          args: '-noSplash -retry=0 -testSuiteCollectionPath="Test Suites/Simple Test Suite Collection" -apiKey= df19e081-8f5f-44bc-ad03-f4007d4ead58 --config -webui.autoUpdateDrivers=true'
+          args: 'katalonc -noSplash -runMode=console -projectPath="D:\Kuliah\semester 7\KATALON\Capstone Project\WEB-Automation\WEB-Automation.prj" -retry=0 -testSuitePath="Test Suites/All Test Suite/Edit Patient" -browserType="Chrome" -executionProfile="default" -apiKey="df19e081-8f5f-44bc-ad03-f4007d4ead58" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true'
